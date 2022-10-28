@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>MCQ_TEST</title>
+</head>
+<body>
+    <div id="home">
+        <div class="content-box img"></div>
+        
+        <div class="content-box right">
+            <div>
+                <h2>MCQ TEST</h2>
+    
+                <div class="content">
+                    <h3>Total Questions <span id="totalQuestion">00</span> In <span id="answerTime">00</span> Minute</h3>
+                    <p>MCQ about Tense (English 2nd paper)</p>
+                    <div class="center">
+                        <button type="button" onclick="handleStart()">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MCQ Page Start-->
+    <div id="mcq">
+        <div class="container">
+            <div class="heading">
+                <h3>
+                    Remaining Time: 
+                    <span id="hour">00</span>:
+                    <span id="min">00</span>:
+                    <span id="sec">00</span>
+                </h3>
+                <button type="button" onclick="handleFinish()">FINISH</button>
+            </div>
+
+            <div class="questions">
+                <!-- all question push here -->
+            </div>
+        </div>
+    </div>
+    <!--MCQ Page End-->
+
+    <!--Timeout Page Start-->
+    <div id="time-out">
+        <div class="content">
+            <img src="./images/stopwatch.png" alt="stopwatch" />
+            <h3>TIME OUT</h3>
+            <button type="button" onclick="handleAgain()">START AGAIN</button>
+        </div>
+    </div>
+    <!--Timeout Page End-->
+
+    <!--Result Page Start-->
+    <div id="result">
+        <div class="content">
+            <img src="./images/result.png" alt="result" />
+            <h3>MCQ Result</h3>
+            <p>You Got <span id="resultPublish">0</span> Score</p>
+            <button type="button" onclick="handleAgain()">START AGAIN</button>
+        </div>
+    </div>
+    <!--Result Page Start-->
+
+    <script src="./main.js"></script>
+</body>
+</html>
